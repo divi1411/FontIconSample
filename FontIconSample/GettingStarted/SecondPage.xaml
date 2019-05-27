@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GettingStarted.SecondPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GettingStarted" Title="Second Page">
+
+    <ContentPage.Content>
+         <StackLayout>
+            <Label Text="Image with FontImageSource"/>
+            <Image BackgroundColor="Aqua">
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="fonticon.ttf#fonticon"
+                        Glyph="&#xe80c;"
+                        Color="Red" />
+                </Image.Source>
+            </Image>
+            <Label Text="Button with glyph value in Text property"/>
+            <Button
+                FontFamily="fonticon.ttf#fonticon"
+                HorizontalOptions="Center"
+                Text="&#xe80c;  Text"
+                VerticalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

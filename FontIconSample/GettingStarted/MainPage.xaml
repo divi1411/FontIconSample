@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="GettingStarted.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:collections="clr-namespace:System.Collections.Generic;assembly=netstandard">
+
+    <ContentPage.Content>
+        <ListView ItemSelected="ListView_ItemSelected">
+            <ListView.ItemsSource>
+                <collections:List x:TypeArguments="x:String">
+                    <x:String>First Page</x:String>
+                    <x:String>Second Page</x:String>
+                </collections:List>
+            </ListView.ItemsSource>
+        </ListView>
+    </ContentPage.Content>
+
+</ContentPage>
