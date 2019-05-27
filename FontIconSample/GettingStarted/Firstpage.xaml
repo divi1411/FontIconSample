@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Image with FontImageSource"/>
-            <Image BackgroundColor="Aqua">
+            <Image>
                 <Image.Source>
                     <FontImageSource
                         FontFamily="fonticon.ttf#fonticon"
